@@ -1,55 +1,67 @@
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page]((https://github.com/Muhammadbilal206/Tetris-in-C-/issues)) if you want to contribute.
-
 ## 📜 License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source andHere is a complete and customized `README.md` file based on your project's source code and structure[cite: 13, 14, 18, 20]. It highlights the specific features you have implemented, such as the custom UI and object-oriented design[cite: 13, 15, 19]. 
+
+You can copy and paste this directly into your `README.md` file.
 
 ***
+```markdown
+# Tetris in C++ with Raylib
 
-**Tip for your GitHub repo:** You can also use the very first sentence ("A classic Tetris clone built using modern C++ and the Raylib game programming library.") for the short "About" sectionHere is a comprehensive and structured description you can use directly for your GitHub repository's `README.md` file. It covers the essentials: what the project is, its features, how to run it, and the controls.
-
-***
-
-# Tetris (C++ & Raylib)
-
-A classic Tetris clone built from scratch using modern C++ and the [Raylib](https://www.raylib.com/) game programming library. This project serves as a fun recreation of the iconic arcade game while demonstrating game loop mechanics, grid-based collision detection, and state management in C++.
+A classic Tetris clone built from scratch using C++ and the [Raylib](https://www.raylib.com/) game programming library. This project implements the core mechanics of the original arcade game using a clean, object-oriented approach.
 
 ## 🚀 Features
 
-*   **Classic Gameplay:** Full Tetris mechanics including piece rotation, line clearing, and game-over states.
-*   **Dynamic Scoring:** Points awarded based on the number of lines cleared simultaneously.
-*   **Next Piece Preview:** UI element showing the upcoming tetromino to help plan your moves.
-*   **Clean Graphics:** Smooth, vibrant visual rendering handled by Raylib.
-*   **Increasing Difficulty:** The game speeds up as your score increases.
-
-## 🛠️ Tech Stack
-
-*   **Language:** C++ (C++17 or later recommended)
-*   **Graphics & Audio:** [Raylib](https://github.com/raysan5/raylib) (v4.5+)
+*   **Classic Mechanics:** Full Tetris gameplay including piece movement, rotation, and line clearing[cite: 13, 15].
+*   **Dynamic Difficulty:** The game speed automatically increases as you clear lines and progress through levels[cite: 13].
+*   **Pre-Game Countdown:** A 3-second countdown sequence before the game starts to get ready[cite: 13].
+*   **Custom UI & Audio:** Features a customized Game Over screen with interactive "Replay" and "Exit" buttons, along with background music and sound effects[cite: 13].
+*   **Object-Oriented Design:** Modular codebase separating logic into distinct classes for the Grid, Tetromino Blocks, Colors, and UI components[cite: 14, 16, 18, 20].
 
 ## 🎮 Controls
 
 *   **Left Arrow:** Move piece left
 *   **Right Arrow:** Move piece right
+*   **Down Arrow:** Soft drop (accelerate piece falling)
 *   **Up Arrow:** Rotate piece clockwise
-*   **Down Arrow:** Soft drop (speed up piece falling)
-*   **Spacebar:** Hard drop (instantly drop piece to the bottom) *(Optional, if implemented)*
-*   **P:** Pause game *(Optional, if implemented)*
 
-## ⚙️ Getting Started
+## 🛠️ Prerequisites
 
-### Prerequisites
+To compile and run this game, you will need:
+*   A C++ compiler supporting C++17 or later (like `clang++` or `g++`).
+*   [Raylib](https://github.com/raysan5/raylib) installed on your system.
 
-To build and run this project, you will need:
-*   A C++ compiler (GCC, Clang, or MSVC)
-*   [Raylib](https://github.com/raysan5/raylib/wiki) installed on your system (or included via CMake/package manager)
+## ⚙️ Compilation & Running
 
-### Compilation
+This project separates source code (`src/`) from media assets (`assets/`). Navigate to the root directory of the project in your terminal to compile. 
 
-*(Note: Update this section based on your specific build system. Here is a generic g++ example).*
+**For macOS (using Homebrew Raylib installation):**
+If you have installed Raylib via Homebrew, you can compile the game using `clang++` with the following command:
 
-If you have Raylib installed system-wide, you can compile the game using `g++`:
 ```bash
-g++ main.cpp -o tetris -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+clang++ -std=c++17 src/*.cpp -o tetris -I/opt/homebrew/include -L/opt/homebrew/lib -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
+
+**For Linux:**
+```bash
+g++ -std=c++17 src/*.cpp -o tetris -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+
+Running the Game:
+Once compiled, run the executable from the root directory so the game can properly load the files from the assets/ folder:
+
+Bash
+./tetris
+📁 Repository Structure
+Plaintext
+Tetris/
+├── src/                      # C++ Source and Header files
+├── assets/                   # Audio, Images, and Fonts
+├── .gitignore                # Ignored compiled binaries and system files
+├── Makefile                  # Build instructions
+└── README.md                 # Project documentation
+👤 Author
+Bilal (24L-0560)
+
+FAST NUCES Lahore
+
+📜 License
+This project is open-source and available under the MIT License.
