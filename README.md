@@ -1,26 +1,55 @@
-# Raylib C++ Starter Template
+## 🤝 Contributing
 
-Raylib C++ Starter Template for Visual Studio Code on Windows.
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page]((https://github.com/Muhammadbilal206/Tetris-in-C-/issues)) if you want to contribute.
 
-This demo project contains a bouncing ball raylib example program.
+## 📜 License
 
-It works with raylib version 4.5.
-Tested on both Windows 10 and Windows 11.
+This project is open-source and available under the [MIT License](LICENSE).
 
-# Video Tutorial
+***
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+**Tip for your GitHub repo:** You can also use the very first sentence ("A classic Tetris clone built using modern C++ and the Raylib game programming library.") for the short "About" sectionHere is a comprehensive and structured description you can use directly for your GitHub repository's `README.md` file. It covers the essentials: what the project is, its features, how to run it, and the controls.
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+***
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="https://www.programmingwithnick.com">My Website</a> | <br>
-</p>
+# Tetris (C++ & Raylib)
 
+A classic Tetris clone built from scratch using modern C++ and the [Raylib](https://www.raylib.com/) game programming library. This project serves as a fun recreation of the iconic arcade game while demonstrating game loop mechanics, grid-based collision detection, and state management in C++.
+
+## 🚀 Features
+
+*   **Classic Gameplay:** Full Tetris mechanics including piece rotation, line clearing, and game-over states.
+*   **Dynamic Scoring:** Points awarded based on the number of lines cleared simultaneously.
+*   **Next Piece Preview:** UI element showing the upcoming tetromino to help plan your moves.
+*   **Clean Graphics:** Smooth, vibrant visual rendering handled by Raylib.
+*   **Increasing Difficulty:** The game speeds up as your score increases.
+
+## 🛠️ Tech Stack
+
+*   **Language:** C++ (C++17 or later recommended)
+*   **Graphics & Audio:** [Raylib](https://github.com/raysan5/raylib) (v4.5+)
+
+## 🎮 Controls
+
+*   **Left Arrow:** Move piece left
+*   **Right Arrow:** Move piece right
+*   **Up Arrow:** Rotate piece clockwise
+*   **Down Arrow:** Soft drop (speed up piece falling)
+*   **Spacebar:** Hard drop (instantly drop piece to the bottom) *(Optional, if implemented)*
+*   **P:** Pause game *(Optional, if implemented)*
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+To build and run this project, you will need:
+*   A C++ compiler (GCC, Clang, or MSVC)
+*   [Raylib](https://github.com/raysan5/raylib/wiki) installed on your system (or included via CMake/package manager)
+
+### Compilation
+
+*(Note: Update this section based on your specific build system. Here is a generic g++ example).*
+
+If you have Raylib installed system-wide, you can compile the game using `g++`:
+```bash
+g++ main.cpp -o tetris -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
