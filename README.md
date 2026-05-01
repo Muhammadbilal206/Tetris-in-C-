@@ -1,2 +1,47 @@
-C++ Tetris with RaylibA classic Tetris implementation built using C++ and the Raylib library. This project features core Tetris mechanics, including block rotation, line clearing, and a progressive leveling system, all wrapped in a custom-themed graphical interface.🚀 FeaturesClassic Gameplay: Includes all standard Tetrimino shapes (I, J, L, O, S, T, Z) with rotation and collision detection.  Progressive Difficulty: Features a level-up system where the "fall delay" decreases (speed increases) as you clear more lines.  State Management: Includes a countdown timer to start the game and a dedicated Game Over screen with "Replay" and "Exit" functionality.  Custom UI/UX:Dynamic scoring, line counting, and level tracking.  Custom font integration (SamuraiBlast.ttf) and background textures.  Audio feedback for button clicks and Game Over states.  🛠️ Built WithLanguage: C++Graphics Library: RaylibOOP Principles: Utilizes class inheritance and polymorphism for UI elements like buttons.  🎮 ControlsKeyActionLeft ArrowMove block left  Right ArrowMove block right  Down ArrowAccelerate fall  Up ArrowRotate block  📦 Installation & SetupInstall Raylib: Ensure you have the Raylib library installed on your system (macOS, Windows, or Linux).Clone the Repository:Bashgit clone https://github.com/your-username/tetris-cpp-raylib.git
-Assets: Ensure the following assets are in your project directory:SamuraiBlast.ttf (Font)  Tetrisback.png (Background image)  butound.WAV (Button sound)  Gameover.WAV (Game over sound)  Compile and Run: Use your preferred C++ compiler (e.g., g++) and link the Raylib library.📂 Project Structuremain.cpp: The core game loop, input handling, and screen management.  Gridformation.h/cpp: Logic for the game grid and row clearing.  Block.h / Blocks.h: Logic for individual Tetrimino shapes and their rotations.  Button Classes: Abstract base class and child implementations for UI interactions. 
+# C++ Tetris with Raylib
+
+A high-performance, classic Tetris implementation developed in **C++** using the **Raylib** framework . This project demonstrates core game engine concepts, object-oriented design, and real-time state management.
+
+## 🚀 Features
+
+* **Classic Gameplay Loop**: Complete implementation of Tetrimino mechanics including falling, horizontal movement, and rotation .
+* **Dynamic Leveling System**: The game tracks cleared lines and increases speed (decreases fall delay) as you progress through levels .
+* **Polished UI/UX**:
+    * **Live Stats**: Real-time display of Score, Level, and Lines cleared .
+    * **Custom Visuals**: Integrated custom typography (`SamuraiBlast.ttf`) and themed background textures (`Tetrisback.png`) .
+    * **Audio Integration**: Sound effects for game over states and menu interactions .
+* **State Management**: Features a countdown "GO!" timer at the start and a robust Game Over menu with Replay/Exit options .
+
+## 🎮 Controls
+
+The game uses standard keyboard inputs for intuitive play:
+
+| Key | Action |
+| :--- | :--- |
+| **Up Arrow** | Rotate Tetrimino |
+| **Down Arrow** | Accelerate Fall  |
+| **Left Arrow** | Move Left  |
+| **Right Arrow** | Move Right  |
+
+## 🛠️ Technical Architecture
+
+The project is structured using Object-Oriented Programming (OOP) to ensure modularity and scalability:
+
+* **`main.cpp`**: Orchestrates the game loop, initialization, and resource management .
+* **Grid Logic**: Manages the `Gridformation` class for collision detection and row clearing .
+* **Block System**: Uses a class hierarchy to handle different Tetrimino shapes and their specific rotation matrices .
+* **UI Components**: Implements a `Button` base class with polymorphism for the `Exitbut` and `Replaybut` UI elements .
+
+## 📦 Dependencies & Setup
+
+1.  **Raylib**: Ensure the **Raylib** library is installed and linked in your C++ environment .
+2.  **Asset Loading**: The executable expects the following files in the same directory:
+    * `SamuraiBlast.ttf` 
+    * `Tetrisback.png` 
+    * `butound.WAV` 
+    * `Gameover.WAV` 
+3.  **Compilation**: Link against `raylib`, `GL`, `m`, `pthread`, `dl`, and `rt`.
+
+---
+
+**Developed by Bilal**
