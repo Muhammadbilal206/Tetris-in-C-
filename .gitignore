@@ -1,0 +1,6 @@
+*.exe
+*.o
+*.dSYM
+*.dsym
+main
+.DS_Store
